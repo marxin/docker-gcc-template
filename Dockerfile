@@ -19,6 +19,6 @@ ENV LD_LIBRARY_PATH /build/bin/gcc/bin:$LD_LIBRARY_PATH
 WORKDIR /build/test
 RUN gcc -v
 
-RUN wget -q https://gcc.gnu.org/bugzilla/attachment.cgi?id=34230 -o x.tar.gz
+RUN wget -q https://gcc.gnu.org/bugzilla/attachment.cgi?id=34230 -O x.tar.gz
 RUN tar xvzf x.tar.gz
 RUN gcc bytes_decl.go bytes.go -flto -o a.out

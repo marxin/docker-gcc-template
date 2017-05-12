@@ -5,9 +5,9 @@ RUN zypper --non-interactive --gpg-auto-import-keys install git wget unzip flex 
 ENV SHELL /bin/bash
 WORKDIR /build
 
-RUN wget -q https://github.com/gcc-mirror/gcc/archive/1ec12a166e5973ab9bb2e13f447bff73d38dd90d.tar.gz
-RUN tar xvzf 1ec12a166e5973ab9bb2e13f447bff73d38dd90d.tar.gz
-WORKDIR gcc-1ec12a166e5973ab9bb2e13f447bff73d38dd90d
+RUN wget -q https://github.com/gcc-mirror/gcc/archive/a4853e4c5f6d4e539c250b4b1be226fa92dd2bab.tar.gz
+RUN tar xvzf a4853e4c5f6d4e539c250b4b1be226fa92dd2bab.tar.gz
+WORKDIR gcc-a4853e4c5f6d4e539c250b4b1be226fa92dd2bab
 
 RUN mkdir objdir 
 WORKDIR objdir
